@@ -1,0 +1,38 @@
+
+.newsletter{
+    background: url(../images/124442.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+ }
+ .newsletter form{
+    max-width: 70rem;
+    margin-left: auto;
+    text-align:center;
+    padding: 5rem 20px;
+    margin-bottom: 20px;
+ 
+ }
+ .newsletter form h3{
+    font-size: 3.2rem;
+    color:#fff;
+    padding-bottom: .7rem;
+ }
+ .newsletter form .box{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: var(--black); border-radius: .5rem;
+    text-transform: none;
+ }
+ 
+ 
+ 
+ @media(max-width:750px){
+    .newsletter{
+        width: 100%;
+    }
+ }
+ 

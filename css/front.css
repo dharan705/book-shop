@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --purple:#1e9426a3;
+   --green:rgba(15, 93, 15, 0.993);
+   --red:#c0392b;
+   --orange:#f39c12;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: var(--purple);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--purple);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+section{
+   padding:3rem 2rem;
+}
+.homehome{
+    min-height: 70vh;
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/magic\ book.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .homehome .contentfront{
+    text-align: center;
+    width: 60rem;
+ }
+ .homehome .contentfront h3{
+    font-size: 5.5rem;
+    color:var(--white);
+    text-transform: uppercase;
+ }
+ 
+ .homehome .contentfront h2{
+    font-size:1.8rem;
+    color:var(--light-white);
+    padding:1rem 0;
+    line-height: 1.5;
+ }
+ .heading1{
+     text-align: center;
+     padding: 1.5rem 0;
+     padding-bottom: 3rem;
+     font-size: 3.5rem;
+     color: var(--black);
+ }
+ .heading1 span{
+     background: var(--green);
+     color: #fff;
+     display: inline-block;
+     padding: 2rem 3rem;
+     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+ }
+ .content h2{
+   text-align: center;
+   font-size: 25px;
+   margin: 0;
+   padding: top 10px;
+}
+a{
+   text-decoration: none;
+}
+.gallery{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   margin: 20px 0;
+}
+.content{
+   width: 20%;
+   margin: 15px;
+   box-sizing: border-box;
+   float: left;
+   text-align: center;
+   border-radius: 20px;
+   cursor: pointer;
+   padding-top: 10px;
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+   0 10px 10px rgba(0,0,0,0.22);
+   transition: .4s;
+   background: #f2f2f2;
+}
+.content:hover{
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+   0 3px 6px rgba(0, 0, 0,0.23);
+   transform: translate(0px,-8px);
+}
+
+.new-arrivals .content:hover{
+   box-shadow: 0 3px 6px rgba(10, 218, 44, 0.16), 
+   0 3px 6px rgba(45, 235, 7, 0.23);
+   transform: translate(0px,-8px);
+}
+
+.heading span{
+   background-color: #219150;
+}
+.content img{
+   width: 200px;
+   height: 200px;
+   text-align: center;
+   margin: 0 auto;
+   display: block;
+}
+.content h6{
+   font-size: 26px;
+   text-align: center;
+   color: #222f3e;
+   margin: 0;
+}
+.content ul{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+}
+.content li{
+   padding: 5px;
+}
+.content fa{
+   font-size: 26px;
+   transition: .4s;
+}
+.checked{
+   color: #ff9f43;
+}
+.fa:hover{
+   text-align: center;
+   font-size: 24px;
+   color: #fff;
+   width: 100%;
+}
+@media(max-width:1000px){
+   .content{
+       width: 45%;
+   }
+}
+
+.newsletter{
+   background: url(../images/136-1368594_small.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+  
+}
+.newsletter form{
+   max-width: 70rem;
+   margin-left: auto;
+   text-align:center;
+   padding: 5rem 20px;
+   margin-bottom: 20px;
+
+}
+.newsletter form h3{
+   font-size: 2.2rem;
+   color:#fff;
+   padding-bottom: .7rem;
+}
+.newsletter form .box{
+   width: 100%;
+   margin: .7rem 0;
+   padding: 1rem 1.2rem;
+   font-size: 1.6rem;
+   color: var(--black); border-radius: .5rem;
+   text-transform: none;
+}
+
+
+
+@media(max-width:750px){
+   .newsletter{
+       width: 100%;
+   }
+}
